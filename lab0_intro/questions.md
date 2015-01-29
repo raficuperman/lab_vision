@@ -61,10 +61,10 @@ Su Mo Tu We Th Fr Sa
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
-    Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
+    Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github 
 
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
-    >   answer
+    >   El par de caracteres #! se denomina un shebang. A continuación de el shebang, al principio del script, se le especifica al shell cuál es la dirección exacta del programa que va a interpretar el script para ejecutarlo. En este caso, se entiende que el programa que interpretará el script se encuentra en /bin/bash
 
 17. How many unique images are in the ``sipi_images`` folder?
     >   answer
