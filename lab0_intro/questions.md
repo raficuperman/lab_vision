@@ -1,62 +1,71 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   answer
+    >   https://github.com/diego0020/lab_vision.git
 
 2.  What is the output of the ``cal`` command?
 
-        multi
-        line
-        answer
+     "The cal utility displays a simple calendar in traditional format 		and ncal offers an alternative layout, more options and the 		date of Easter.  The new format is a little cramped but it 		makes a year fit on a 25x80 terminal.  If arguments are 	not specified, the current month is displayed." Es decir, el comando cal muestra el calendario del mes actual. al ejecutarlo se observa lo siguiente:
+January 2015 
+Su Mo Tu We Th Fr Sa 
+             1  2  3  
+ 4  5  6  7  8  9 10 
+11 12 13 14 15 16 17 
+18 19 20 21 22 23 24 
+25 26 27 28 29 30 31
+
 
 # Homework Questions
 
 1.  What is the ``grep``command?
-    >   answer
-
+    >   El comando grep es un comando que busca, en los archivos seleccionados, las líneas de ellos que contengan una cadena de caracteres específicos. Por ejemplo, el comando 'grep hola saludo.txt' buscará en el archivo saludo la palabra hola y mostrará las líneas de dicho archivo que contienen hola
 2.  What is a *makefile*?
-    >   answer
+    >   Un makefile es un archivo de texto que dicta las reglas de compilación de un programa que se desea compilar (y luego instalar) bajo el comando 'make'. En este documento escrito se encuentra información como manuales, dónde instalar los ficheros, documentos, datos, etc
 
 3.  What is *git*?
-    >   answer
+    >   Git es un software con el cual se puede tener un muy buen manejo de control de versiones de un documento para así llevar control sobre los cambios que se han hecho sobre este. Una de las diferencia más importante de git con respecto a otros softwares de control de versiones, se basa en que git maneja los datos como una sucesión de snapshots.
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
-    >   answer
-
+    >   La opción -prune bajo el comando 'find' hace que se excluda la búsqueda realizada por 'find' en el (o los) directorios seleccionados. Por ejemplo, la sentencia 'find . -name "*.md"' buscará todos los archivos que terminen en .md en la carpeta actual (incluyendo las carpetas que están dentro de la carpeta actual), sin embargo la sentencia 'find . -name "lab*" -prune -o -name "*.md"' buscará todos los archivos que terminen en .md en la carpeta actual, exceptuando buscar en los directorios que comienzan por "lab"
 5.  Where is the file ``xxxxxx``
-    >   answer
+    >   Se puede buscar este archivo empezando desde el Home con el siguiente comando: find ~ -name "xxxxxx"
 
 6.  How many files with ``gnu`` in its name are in ``dir``
-    >   answer
+    >   Mediante el siguiente comando se puede saber lo anterior: find ./dir -name "*gnu*" | wc -l
 
 7.  How many files contain ``gpl`` inside in ``dir``
-    >   answer
+    >   Mediante el siguiente código se puede saber lo anterior:grep -rl gpl ./dir |wc -l
+
 
 8.  What does the ``cut`` command do?
-    >   answer
+    >   El comando cut, como su nombre lo dice, corta o extrae una parte específica de una línea de texto determinada por las opciones del comando.
 
 9.  What does the ``wget`` command do?
-    >   answer
+    >   El comando wget permite descargar archivos de internet a partir de la URL, por ejemplo.
 
 10.  What does the ``diff`` command do?
-    >   answer
+    >   El comando diff compara dos archivos línea por línea, mostrando las líneas que no se encuentran exactamente igual en ambos archivos.
 
 11.  How many users exist in *Guitaca*?
-    >   answer
+    >   48 (mediante el comando cat /etc/passwd)
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer
+    >   cut -d':' -f1,7 /etc/passwd | sort -t':' -k 2
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer
+    >   cat  /etc/passwd | grep "/sbin/nologin" | wc
+        Son 41
 
 14.  What is the name of the linux distribution running on *Guitaca*?
-    >   answer
+    >   Linux version 3.17.8-200.fc20.x86_64 (mockbuild@bkernel02.phx2.fedoraproject.org) (gcc version 4.8.3 20140911     >(Red Hat 4.8.3-7) (GCC) ) #1 SMP Thu Jan 8 23:26:57 UTC 2015
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
-16. How many unique images are in the ``sipi_images`` folder?
+16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
+    >   answer
+
+17. How many unique images are in the ``sipi_images`` folder?
     >   answer
     
