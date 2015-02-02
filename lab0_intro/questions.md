@@ -5,7 +5,7 @@
 
 2.  What is the output of the ``cal`` command?
 
-     "The cal utility displays a simple calendar in traditional format 		and ncal offers an alternative layout, more options and the 		date of Easter.  The new format is a little cramped but it 		makes a year fit on a 25x80 terminal.  If arguments are 	not specified, the current month is displayed." Es decir, el comando cal muestra el calendario del mes actual. al ejecutarlo se observa lo siguiente:
+     "The cal utility displays a simple calendar in traditional format 		and ncal offers an alternative layout, more options and the 		date of Easter.  The new format is a little cramped but it 		makes a year fit on a 25x80 terminal.  If arguments are 	not specified, the current month is displayed." Es decir, el comando cal muestra el calendario del mes actual, junto con el día presente resaltado. Al ejecutarlo se observa lo siguiente:
 January 2015 
 Su Mo Tu We Th Fr Sa 
              1  2  3  
