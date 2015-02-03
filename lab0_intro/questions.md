@@ -69,5 +69,5 @@ Su Mo Tu We Th Fr Sa
     >   El par de caracteres #! se denomina un shebang. A continuación de el shebang, al principio del script, se le especifica al shell cuál es la dirección exacta del programa que va a interpretar el script para ejecutarlo. En este caso, se entiende que el programa que interpretará el script se encuentra en /bin/bash
 
 17. How many unique images are in the ``sipi_images`` folder?
-    >   answer
+    >   215. Se encuentra este número ejecutando el script ImagenesUnicas.sh (que se encuentra subido a github) dentro de la carpeta sipi_images
     
