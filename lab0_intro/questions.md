@@ -31,11 +31,11 @@ Su Mo Tu We Th Fr Sa
 5.  Where is the file ``xxxxxx``
     >   Se puede buscar este archivo empezando desde el Home con el siguiente comando: find ~ -name "xxxxxx"
 
-6.  How many files with ``gnu`` in its name are in ``dir``
-    >   Mediante el siguiente comando se puede saber lo anterior: find ./dir -name "*gnu*" | wc -l
+6.  How many files with ``gnu`` in its name are in ``/usr/src​``
+    >   Mediante el siguiente comando se puede saber lo anterior: find ./usr/src​ -name "*gnu*" | wc -l
 
-7.  How many files contain ``gpl`` inside in ``dir``
-    >   Mediante el siguiente código se puede saber lo anterior:grep -rl gpl ./dir |wc -l
+7.  How many files contain ``gpl`` inside in ``/usr/src​``
+    >   Mediante el siguiente código se puede saber lo anterior:grep -rl gpl ./usr/src​ |wc -l
 
 
 8.  What does the ``cut`` command do?
