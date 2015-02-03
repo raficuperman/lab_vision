@@ -70,4 +70,5 @@ Su Mo Tu We Th Fr Sa
 
 17. How many unique images are in the ``sipi_images`` folder?
     >   215. Se encuentra este número ejecutando el script ImagenesUnicas.sh (que se encuentra subido a github) dentro de la carpeta sipi_images
+
     
