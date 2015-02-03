@@ -25,10 +25,12 @@
     >   Se puede buscar este archivo empezando desde el Home con el siguiente comando: find ~ -name "xxxxxx"
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src​``
-    >   Mediante el siguiente comando se puede saber lo anterior: find ./usr/src​ -name "*gnu*" | wc -l
+    >   Mediante el siguiente comando se puede saber lo anterior: [vision@guitaca /]$ cd /usr/src​ |find -name "*gnu*" | wc -l 
+Respuesta: 656
 
 7.  How many files contain ``gpl`` inside in ``/usr/src​``
-    >   Mediante el siguiente código se puede saber lo anterior:grep -rl gpl ./usr/src​ |wc -l
+    >   Mediante el siguiente código se puede saber lo anterior:[vision@guitaca /]$ grep -rl gpl /usr/src/ | wc -l  
+Respuesta:76
 
 
 8.  What does the ``cut`` command do?
