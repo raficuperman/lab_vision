@@ -62,6 +62,7 @@ Su Mo Tu We Th Fr Sa
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github 
+    >	El script se encuentra subido a github. Este script genera el hash de cada imagen terminada en .tiff (si están en otro formato sólo basta con cambiar .tiff al formato correspondiente), los ordena y luego con el comando uniq compara estos hash de cada imagen, mostando el nombre de las imagenes que tienen este mismo valor, es decir, son duplicadas. Referencia: "Find Duplicate Files (based on Size First, Then MD5 Hash)." Commandlinefu.com. N.p., 4 Aug. 2008. Web. 02 Feb. 2015. <http://www.commandlinefu.com/commands/view/3555/find-duplicate-files-based-on-size-first-then-md5-hash>.
 
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
     >   El par de caracteres #! se denomina un shebang. A continuación de el shebang, al principio del script, se le especifica al shell cuál es la dirección exacta del programa que va a interpretar el script para ejecutarlo. En este caso, se entiende que el programa que interpretará el script se encuentra en /bin/bash
