@@ -22,7 +22,7 @@
 4.  What does the ``-prune`` option of ``find`` do? Give an example
     >   La opción -prune bajo el comando 'find' hace que se excluda la búsqueda realizada por 'find' en el (o los) directorios seleccionados. Por ejemplo, la sentencia 'find . -name "*.md"' buscará todos los archivos que terminen en .md en la carpeta actual (incluyendo las carpetas que están dentro de la carpeta actual), sin embargo la sentencia 'find . -name "lab*" -prune -o -name "*.md"' buscará todos los archivos que terminen en .md en la carpeta actual, exceptuando buscar en los directorios que comienzan por "lab"
 5.  Where is the file ``xxxxxx``
-    >   Se puede buscar este archivo empezando desde el Home con el siguiente comando: find ~ -name "xxxxxx"
+    >   Se puede buscar este archivo empezando desde / con el siguiente comando: find / -name "xxxxxx" 2>/dev/null. No se encuentran resultados
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src​``
     >   Mediante el siguiente comando se puede saber lo anterior: [vision@guitaca /]$ cd /usr/src​ |find -name "*gnu*" | wc -l 
