@@ -18,6 +18,7 @@ Su Mo Tu We Th Fr Sa
 # Homework Questions
 
 1.  What is the ``grep``command?
+
     >   El comando grep es un comando que busca, en los archivos seleccionados, las líneas de ellos que contengan una cadena de caracteres específicos. Por ejemplo, el comando 'grep hola saludo.txt' buscará en el archivo saludo la palabra hola y mostrará las líneas de dicho archivo que contienen hola
 2.  What is a *makefile*?
     >   Un makefile es un archivo de texto que dicta las reglas de compilación de un programa que se desea compilar (y luego instalar) bajo el comando 'make'. En este documento escrito se encuentra información como manuales, dónde instalar los ficheros, documentos, datos, etc
