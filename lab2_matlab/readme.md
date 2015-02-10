@@ -165,7 +165,7 @@ These filters can be applied to a an image in order to remove noise.
 3.  Try different sizes for the filters
 4.  Which filter works best for salt & pepper noise?
 
-    > Answer
+    > El filtro mediana es mejor para remover ruido tipo sal y pimienta.
 
 For more on noise removal read http://www.mathworks.com/help/images/noise-removal.html
 
