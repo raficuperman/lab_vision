@@ -81,12 +81,12 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
     
     What is the dimension of the output?
 
-    >   Answer
+    >   256x256
 
 3.  Read the ``4.2.03`` image
     What is the dimension of the output?
 
-    >   Answer
+    >   512x512x3
 
 ## Displaying Images
 
@@ -99,7 +99,7 @@ The following commands can be used for displaying images
 2.  Try displaying the images read in the previous point using both commands
 3.  What are the differences?
 
-    >   Answer
+    >   El comando imshow muestra la imagen tal cual, mientras que el comando image muestra la imagen con los ejes verticales y horizontales a la izquierda y abajo de la imagen respectivamente, mostrando así una aproximación visual a la posición de cada píxel. Imshow muestra la imagen como imagen, mientras que image considera a la imagen como una matrix y la muestra como imagen (por eso los ejes). Al maximizar la ventana la imagen mostrada en imshow mantiene la forma y la proporción; mientras que con image la imagen se distorsiona perdiendo la proporción.
 
 ## Writing Images
 
@@ -108,6 +108,7 @@ The [imwrite](http://www.mathworks.com/help/matlab/ref/imwrite.html) image is us
 1.  Look at the manual page
 2.  Write one of the images from before as png and as jpg
 3.  Write a matlab function that takes the path of an image and converts it to jpg
+	La función creada se llama ConvertToJPG
 
 ## Matlab and the shell
 
