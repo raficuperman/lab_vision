@@ -151,7 +151,7 @@ We can do this to simulate difficult capture conditions, and evaluate the algori
 2.  Try the diffente noise types, and save the noisy images to the repository (5 images)
 3.  Try saving noisy images as jpg, what happens?
 
-    > Answer
+    > La imagen se guarda en ese formato, pero al acercar la imagen y ver en detalle, se observa que se pierde resolución en la .jpg en comparación a la .tiff, ya que al acercar la .jpg se pixela bastante la imagen, pareciendo que tuviera más ruido que el que realmente tiene.
 
 ### Median filter
 
