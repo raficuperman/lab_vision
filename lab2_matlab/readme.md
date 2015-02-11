@@ -179,7 +179,7 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 2.  Try different sizes for the filters
 3.  What differences do you notice?
 
-    > Answer
+    > Como el filtro promedio le asigna el mismo peso a todos los píxeles de la ventana en el cálculo del nuevo valor central, a medida que la ventana de este filtro es mayor, la imagen se ve más borrosa (mayor blur) que con un filtro de menor tamaño. Los filtros gaussianos le asignan un mayor peso al píxel central y peso menor a los píxeles más alejados del centro de la ventana; por lo tanto si sólo se modifica el tamaño de la ventana sin modificar el sigma de esta, dos filtros gaussianos de diferentes tamaños causarán casi el mismo efecto sobre la imagen, ya que los píxeles más alejados del centro no actuarán casi sobre el filtrado (como si no hicieran parte de la ventana). Para ver el cambio entre dos tamaños de ventanas para filtros gaussianos es necesario tener en cuenta también el sigma de estos. 
 
 ### Sharpen
 
@@ -187,11 +187,11 @@ The [imsharpen](http://www.mathworks.com/help/images/ref/imsharpen.html) functio
 
 1.  Sharp the ``5.1.12`` image. What do you notice?
 
-    > Answer
+    > Al hacerle imsharpen a la imagen esta se ve más nítida, como si los bordes fueran un poco más claros que la versión anterior. Se reduce el "blur" de la imagen
 
 2.  Sharp a blurred image. What do you notice?
 
-    > Answer
+    > Como era de esperar, al hacerle imsharpen a la imagen borrosa, esta vuelve a recuperar un poco sus contornos, haciendo que sea un poco menos borrosa.
 
 ### Edge detection
 
@@ -206,7 +206,7 @@ Notice that the last two filters detect horizontal edges, in order to detect ver
 1.  Try applying this filters
 2.  What is the difference between prewitt and sobel?
 
-    > Answer
+    > Aunque los dos detectan de manera satisfactoria los bordes de una imagen, los bordes encontrados con sobel parecen ser más claros que los encontrados con prewitt. La imagen generada con sobel tiene bordes más marcados, ya que la ventana que se utiliza le da un mayor peso (en magnitud) a los píxeles de arriba y abajo del píxel central que a los que se encuentran de manera diagonal a ese píxel. En el caso de prewitt los píxeles diagonales y los de arriba y abajo al píxel central tienen el mismo peso (en magnitud).  (Lo anterior es para detección de bordes horizontales; para verticales es lo mismo pero con los píxeles de derecha e izquierda del píxel central).
 
 More sophisticated methods for finding edges can be found in the following pages
     -   http://www.mathworks.com/discovery/edge-detection.html
