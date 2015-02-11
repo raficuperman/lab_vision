@@ -139,6 +139,7 @@ If the command or script doesn't end in ``exit`` the matlab shell will stay open
     -   Or a matlab script that calls bash 
     -   Or both
 2.  Save this script in the matlab lab folder of your git repository
+	El script creado se llama convertirTodasAJPG.m
 
 ## Filters
 
