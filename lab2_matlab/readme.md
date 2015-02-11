@@ -108,7 +108,7 @@ The [imwrite](http://www.mathworks.com/help/matlab/ref/imwrite.html) image is us
 1.  Look at the manual page
 2.  Write one of the images from before as png and as jpg
 3.  Write a matlab function that takes the path of an image and converts it to jpg
-	La función creada se llama ConvertToJPG
+    > La función creada se llama ConvertToJPG
 
 ## Matlab and the shell
 
@@ -139,7 +139,7 @@ If the command or script doesn't end in ``exit`` the matlab shell will stay open
     -   Or a matlab script that calls bash 
     -   Or both
 2.  Save this script in the matlab lab folder of your git repository
-	El script creado se llama convertirTodasAJPG.m
+    > El script creado se llama convertirTodasAJPG.m
 
 ## Filters
 
