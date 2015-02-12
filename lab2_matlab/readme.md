@@ -261,11 +261,11 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 2.  Create a four level pyramid from the ``5.1.12`` clock  image
 3.  At what level does the people in the picture dissappear?
 
-    >   Answer
+    >   En el segundo nivel (siendo el primer nivel la imagen original) ya cuesta bastante diferenciar las personas en la fotografía.
     
 4.  At what level does the numbers in the clock disappear?
 
-    >   Answer
+    >   En el tercer nivel (siendo el primer nivel la imagen original) los números del reloj ya no se alcanzan a ver.
 
 ## Template Matching
 
@@ -305,13 +305,13 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     ```
 6.  Explain what the above code does
 
-    > Answer
+    > Lo primero que hace el código es calcular la cross-correlación normalizada entre el tren (que fue recortado antes) y la imagen original. De esta manera se obtiene un mapa donde el valor más altos corresponde al sitio de mayor correspondencia entre las dos imágenes. Luego encuentra el tamaño de la imagen original y el tamaño del recorte del tren (lo divide entre dos y redondea el resultado hacia abajo). Como la imagen (o mapa) de cross-correlación generada es de mayor tamaño a la imagen original, el comando c2=c(dx+1:sx+dx,dy+1:sy+dy) recorta este mapa para que sea del mismo tamaño que la imagen original. Después se acentúa este mapa, de tal modo que se evidencie aún más el sitio de mayor correspondencia entre las dos imagenes. El mapa de cross-correlación es entre -1 y 1, por lo cual se convierten los valores para que queden entre 0 y 1 (este es el canal cr). Se toma luego la imagen original en escala de grises (este es el canal Y) y se crea una matriz del tamaño de la imagen original con todos los elementos de valor 0,5 (este es el canal cb). Se juntan estos tres canales, con lo que se obtiene una imagen en codificación YCbCr. Se convierte esta imagen a RGB y se visualiza, con lo que se puede encontrar el tren recortado en la imagen. 
     
 7.  Now lets find the train in the next frame, read image ``motion05.512.tiff``.
 8.  Apply the procedure written above to it (use the train template from the past frame)
 9.  What are the limitations of this method?
 
-    > Answer
+    > Las limitaciones del método de template matching se basan en que la cross-correlación necesita que el recorte tenga una correspondencia perfecta (o casi) con la parte de la imagen que se desea. Por tal modo, se necesita tener un recorte de lo que se desea encontrar con anterioridad. Además, el objeto a buscar debe ser del mismo tamaño (o muy cercano) tanto en el recorte como en la imagen original, junto con su orientación y color. Es sumamente sensible al ruido, ya que si hay ruido en la imagen pero no en el recorte (o viceversa), la correspondencia no puede ser la deseada.
 
 See [here](http://www.mathworks.com/help/images/examples/registering-an-image-using-normalized-cross-correlation.html)
 another example.
