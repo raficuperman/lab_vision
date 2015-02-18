@@ -46,6 +46,8 @@ The hybrid image is composed by adding the two filtered images. The full formula
 
 Where *f1* and *f2* are low pass filters, and *X1* and *X2* are the input images. Notice that the effect depends on the cut-off frequencies of both filters (see figure 5 of the [Hybrid Images paper](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf)). Additionally, you may scale the amplitude of one of the images to reduce or increase its impact. Play with this parameters to get a good Hybrid Image.
 
+Me basé en http://cs.brown.edu/courses/cs143/results/proj1/jklee/
+
 - Upload the full matlab script used to generate the image to the repository
 - Upload the final image to the repository
 
