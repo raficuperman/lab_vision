@@ -248,7 +248,7 @@ color spaces.
     ```
 5.  Transform the image to the following color spaces and repeat the exercise
     -   ycbcr
-    -   lab
+    -   lab (usé el código RGB2Lab que encontré en internet, ya que mi Matlab no tiene esa función. Subí este código a GitHub)
     -   hsv (use [rgb2hsv](http://www.mathworks.com/help/matlab/ref/rgb2hsv.html))
 
 6.  Save all the mosaics in your github repository
