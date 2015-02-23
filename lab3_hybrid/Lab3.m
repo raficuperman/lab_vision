@@ -45,3 +45,9 @@ figure, imshow(H1)
 figure, imshow(H2)
 figure, imshow(H3)
 figure, imshow(H4)
+
+imwrite(H, 'Hibrida0.jpg');
+imwrite(H1, 'Hibrida1.jpg');
+imwrite(H2, 'Hibrida2.jpg');
+imwrite(H3, 'Hibrida3.jpg');
+imwrite(H4, 'Hibrida4.jpg');

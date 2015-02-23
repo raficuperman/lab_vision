@@ -38,8 +38,8 @@ figure, imshow(H2)
 figure, imshow(H3)
 figure, imshow(H4)
 
-imwrite(H, 'Hibrida.tiff');
-imwrite(H1, 'Piramide1.tiff');
-imwrite(H2, 'Piramide2.tiff');
-imwrite(H3, 'Piramide3.tiff');
-imwrite(H4, 'Piramide4.tiff');
+imwrite(H, 'Hibrida.jpg');
+imwrite(H1, 'Piramide1.jpg');
+imwrite(H2, 'Piramide2.jpg');
+imwrite(H3, 'Piramide3.jpg');
+imwrite(H4, 'Piramide4.jpg');
