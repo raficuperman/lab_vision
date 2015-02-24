@@ -75,9 +75,30 @@ switch clustering_method
         title('Clustering por gmm')
 
     case 'hierarchical'
-
+        I=rgb2gray(I);
+        hy= fspecial('sobel');
+        hx= hy';
+        Iy= imfilter(double(I), hy, 'replicate');
+        Ix = imfilter(double(I), hx, 'replicate');
+        grad = sqrt(Ix.^2 + Iy.^2);
+        marker = imextendedmin(grad, number_of_clusters);
+        new_grad= imimposemin(grad, marker);
+        ws= watershed(new_grad);
+        figure,imshow(ws==0)
+        %colormap colorcube
+        title('Clustering por hierarchical')
     case 'watershed'
-        
+        %gradient’smagnitude
+        hy= fspecial('sobel');
+        hx= hy';
+        Iy= imfilter(double(I), hy, 'replicate');
+        Ix = imfilter(double(I), hx, 'replicate');
+        grad = sqrt(Ix.^2 + Iy.^2);
+        % watersheds
+        ws= watershed(grad);
+        figure,imshow(ws==0)
+        %colormap colorcube
+        title('Clustering por watershed')
     otherwise %kmeans
         clusters=kmeans(IReshape, number_of_clusters);
         clusters=reshape(clusters,M,N);
